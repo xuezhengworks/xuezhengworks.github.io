@@ -3,204 +3,333 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Xue Zheng is a Ph.D. candidate at The Ohio State University working on federated and decentralized learning, privacy-preserving machine learning, and foundation models.">
-  <meta name="theme-color" content="#f7f5f0">
-  <title>Xue Zheng | Federated &amp; Decentralized Learning</title>
+  <meta name="description" content="Xue Zheng is a Ph.D. candidate at The Ohio State University studying federated and decentralized learning, privacy-preserving machine learning, and foundation models.">
+  <meta name="theme-color" content="#f3efe5">
+  <title>Xue Zheng — Federated &amp; Decentralized Learning</title>
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Xue Zheng, home">XZ</a>
-    <nav aria-label="Main navigation">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="mailto:zheng.1822@osu.edu">Email</a>
+  <header class="page-header" id="top">
+    <div class="issue-line">
+      <span>Research profile · 2026</span>
+      <span>Columbus, Ohio</span>
+      <span>Jul 2026</span>
+    </div>
+
+    <div class="masthead">
+      <a class="masthead-name" href="#top" aria-label="Xue Zheng, homepage">Xue Zheng</a>
+      <p>Ph.D. Candidate in Electrical &amp; Computer Engineering</p>
+    </div>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#interests">Research</a>
+      <a href="#work">Work &amp; Publications</a>
+      <a href="#notes">News</a>
+      <a href="/cv.pdf" target="_blank">CV</a>
+      <a href="mailto:zheng.1822@osu.edu">Contact</a>
     </nav>
+
+    <details class="mobile-nav">
+      <summary>Menu</summary>
+      <div>
+        <a href="#about">About</a>
+        <a href="#interests">Research</a>
+        <a href="#work">Work &amp; Publications</a>
+        <a href="#notes">News</a>
+        <a href="/cv.pdf" target="_blank">CV</a>
+        <a href="mailto:zheng.1822@osu.edu">Contact</a>
+      </div>
+    </details>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Ph.D. Candidate · The Ohio State University</p>
-        <h1>Xue Zheng</h1>
-        <p class="lede">
-          I develop learning methods that help distributed agents collaborate
-          when data are private, heterogeneous, and constantly changing.
-        </p>
-        <div class="actions" aria-label="Contact and profile links">
-          <a class="button primary" href="mailto:zheng.1822@osu.edu">Get in touch</a>
-          <a class="button" href="/cv.pdf" target="_blank" rel="noreferrer">CV</a>
-          <a class="button" href="https://www.linkedin.com/in/xue-zheng-a138611b3/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button" href="https://github.com/xuezhengworks" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
-      <div class="portrait-wrap">
-        <img class="portrait" src="/images/profile.png" alt="Portrait of Xue Zheng" width="548" height="457">
-        <p class="portrait-note">Columbus, Ohio</p>
-      </div>
-    </section>
-
-    <section class="intro" aria-labelledby="about-title">
-      <p class="section-label">About</p>
-      <div>
-        <h2 id="about-title">Building trustworthy collaboration into machine learning.</h2>
-        <p>
+  <main>
+    <section class="lead-grid" aria-label="Introduction">
+      <article class="about-column" id="about">
+        <p class="kicker">About</p>
+        <h1>Learning together without giving everything away.</h1>
+        <p class="drop-cap">
           I am a post-candidacy Ph.D. candidate in Electrical and Computer
           Engineering at The Ohio State University, advised by
-          <a href="https://u.osu.edu/yener.1/" target="_blank" rel="noreferrer">Prof. Aylin Yener</a>
-          in the INSPIRE@OhioState Lab. My work spans algorithm design,
-          theoretical analysis, and systems evaluation for federated and
-          decentralized learning.
+          <a href="https://aylinyener.github.io/" target="_blank" rel="noreferrer">Prof. Aylin Yener</a>
+          in the <a href="https://u.osu.edu/inspire/" target="_blank" rel="noreferrer">INSPIRE@OhioState</a> Lab.
         </p>
         <p>
-          I am especially interested in settings where institutions or edge
-          devices cannot share local data or model information directly, yet
-          still need to train and deploy advanced AI systems together.
+          My research develops learning methods for institutions and edge
+          devices that need to collaborate while keeping local data and model
+          information private. I work across algorithms, theory, and systems
+          evaluation.
         </p>
+        <div class="byline-links">
+          <a href="mailto:zheng.1822@osu.edu">Email</a>
+          <a href="https://www.linkedin.com/in/xue-zheng-a138611b3/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/xuezhengworks" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="/cv.pdf" target="_blank">Curriculum Vitae</a>
+        </div>
+      </article>
+
+      <div class="portrait-column">
+        <div class="photo-carousel" data-carousel aria-label="Research and personal photographs">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <figure class="carousel-slide">
+                <img src="/images/profile.png" alt="Portrait of Xue Zheng" width="548" height="457">
+                <figcaption>Portrait · Columbus, Ohio</figcaption>
+              </figure>
+              <!--
+                To add another photograph, copy the figure above, change the
+                image path and alt text, and place the image in /images/.
+                The navigation dots and arrows update automatically.
+              -->
+            </div>
+          </div>
+          <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous photograph">←</button>
+          <button class="carousel-arrow carousel-next" type="button" aria-label="Next photograph">→</button>
+          <div class="carousel-dots" aria-label="Choose a photograph"></div>
+        </div>
+        <p class="photo-credit">Xue Zheng · The Ohio State University</p>
+      </div>
+
+      <article class="interests-column" id="interests">
+        <p class="kicker">Research interests</p>
+        <ol class="interest-list">
+          <li>
+            <div>
+              <h2>Federated &amp; decentralized learning</h2>
+              <p>Collaborative learning across heterogeneous clients without centralizing their data.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Privacy-preserving collaboration</h2>
+              <p>Secure aggregation and peer-to-peer methods that protect local information.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Performative learning</h2>
+              <p>Robust learning when deployed models influence future data distributions.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h2>Foundation models &amp; MoE</h2>
+              <p>Resource-aware federated fine-tuning and sparse expert assignment.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-banner">
+        <p class="kicker">Current research</p>
+        <h2>Work &amp; Publications</h2>
+        <p>Research questions first; papers in context.</p>
+      </div>
+
+
+      <article class="feature-story">
+        <div class="story-index">
+          <span>Research</span>
+          <strong>01</strong>
+        </div>
+
+        <div class="story-copy">
+          <p class="story-tag">Foundation models · Federated learning · Edge AI</p>
+          <h3>Federated Foundation Models at the Edge</h3>
+          <p>
+            My ongoing work explores how pretrained foundation models, including
+            large language models and mixture-of-experts architectures, can be
+            collaboratively trained, adapted, and deployed across distributed edge
+            clients without centralizing their local data.
+          </p>
+        </div>
+
+        <div class="related-paper">
+          <p class="kicker">Related publications</p>
+
+          <h4>Server-Side Sparse Assignment for Federated Mixture-of-Experts</h4>
+          <p><strong>X. Zheng</strong> and A. Yener</p>
+          <p>Accepted to IEEE Information Theory Workshop, 2026</p>
+          <p>
+            This work studies federated mixture-of-experts learning under partial
+            expert visibility, where resource-constrained clients can access only a
+            subset of experts. S3-MoE estimates client-specific expert relevance on
+            the server and uses an exploit–explore strategy to assign effective
+            sparse expert subsets.
+          </p>
+
+          <h4>
+            Toward WAN-Aware LLM Training Across Heterogeneous,
+            Geo-Distributed Sites
+          </h4>
+          <p>
+            Z. Luo, J. Cai, C. Le Denmat, S. Nair, F. Nourzad,
+            R. K. Sudha, Q. Wu, J. Zhang, S. Lee, Z. Li, P. Qiu,
+            S. Shah, R. Sharma, S. Srinivasan, Y. Xia,
+            <strong>X. Zheng</strong>, Z. Liu, B. Ying, K. Chowdhury,
+            G. Joshi, Y. Liang, R. Nowak, S. Parthasarathy, S. Prakash,
+            B. Ravindran, S. Shakkottai, N. B. Shroff, S. Srinivasan,
+            H. Yang, A. Yener, and J. Liu
+          </p>
+          <p>
+            ACM SIGCOMM Workshop on Networks for AI Computing, 2026
+          </p>
+        </div>
+      </article>
+
+
+      <article class="feature-story">
+        <div class="story-index">
+          <span>Research</span>
+          <strong>02</strong>
+        </div>
+        <div class="story-copy">
+          <p class="story-tag">Distribution shifts · Robust optimization</p>
+          <h3>Performative and evolving federated learning</h3>
+          <p>
+            Deployed models can alter the data they later observe. This line of
+            work studies robust federated optimization and decentralized
+            learning over changing interaction graphs when model deployment,
+            network evolution, and data shifts are tightly coupled.
+          </p>
+        </div>
+        <div class="related-paper">
+          <p class="kicker">Related publications</p>
+          <h4><a href="https://arxiv.org/abs/2410.18075" target="_blank" rel="noreferrer">ProFL: Performative Robust Optimal Federated Learning</a></h4>
+          <p><strong>X. Zheng</strong>, T. Xie, X. Tan, A. Yener, and X. Zhang · Under review, 2026</p>
+          <h4>Decentralized Multi-Agent Performative Prediction under Coupled Graph and Deployment-Induced Data Evolution</a></h4>
+          <p><strong>X. Zheng</strong>, A. Yener . · Under review, 2026</p>
+          <h4><a href="https://doi.org/10.3390/e28010101" target="_blank" rel="noreferrer">Federated Learning Under Evolving Distribution Shifts</a></h4>
+          <p>X. Tan, T. Xie, <strong>X. Zheng</strong>, et al. · <em>Entropy</em>, 2026</p>
+        </div>
+      </article>
+
+      <article class="feature-story">
+        <div class="story-index">
+          <span>Research</span>
+          <strong>03</strong>
+        </div>
+        <div class="story-copy">
+          <p class="story-tag">Personalization · Secure aggregation</p>
+          <h3>Private peer-to-peer collaboration without a central server</h3>
+          <p>
+            Personalized agents learn whom to collaborate with while keeping
+            individual models private. The work combines directed
+            collaboration graphs, clustering, and Shamir secret sharing for
+            practical secure aggregation in peer-to-peer networks.
+          </p>
+        </div>
+        <div class="related-paper">
+          <p class="kicker">Related publications</p>
+          <h4>Privacy-Preserving Clustered Peer-to-Peer Learning</h4>
+          <p><strong>X. Zheng</strong> and A. Yener · Asilomar, 2023</p>
+          <h4>DiPLe: Learning Directed Collaboration Graphs for Peer-to-Peer Personalized Learning</h4>
+          <p><strong>X. Zheng</strong>, P. Naghizadeh, and A. Yener · IEEE ITW, 2022</p>
+        </div>
+      </article>
+
+      <div class="all-publications">
+        <a href="/cv.pdf" target="_blank">View full publication list in CV →</a>
       </div>
     </section>
 
-    <section id="research" class="section-block" aria-labelledby="research-title">
-      <div class="section-heading">
-        <p class="section-label">Research</p>
-        <h2 id="research-title">Questions I work on</h2>
-      </div>
-      <div class="research-grid">
-        <article>
-          <span class="number">01</span>
-          <h3>Federated &amp; decentralized learning</h3>
-          <p>Learning across heterogeneous clients without centralizing their data.</p>
-        </article>
-        <article>
-          <span class="number">02</span>
-          <h3>Privacy-preserving collaboration</h3>
-          <p>Secure aggregation and peer-to-peer methods that protect local models and information.</p>
-        </article>
-        <article>
-          <span class="number">03</span>
-          <h3>Distribution shifts</h3>
-          <p>Robust and performative learning when deployed models influence future data.</p>
-        </article>
-        <article>
-          <span class="number">04</span>
-          <h3>Foundation models &amp; MoE</h3>
-          <p>Resource-aware federated fine-tuning and sparse expert assignment for large models.</p>
-        </article>
-      </div>
-    </section>
+    <section class="briefs-grid" id="notes" aria-label="Teaching, news, and presentations">
+      <article>
+        <p class="kicker">Teaching &amp; Mentoring</p>
+        <h2>AI-EDGE Summer REU</h2>
+        <p>
+          Lecturer and graduate student mentor, 2024–2026. Topics include
+          probability, research problem formulation, and probabilistic
+          generation in modern language models.
+        </p>
+      </article>
 
-    <section id="publications" class="section-block" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <p class="section-label">Publications</p>
-        <h2 id="publications-title">Selected work</h2>
-      </div>
-      <ol class="publication-list">
-        <li>
-          <span class="pub-year">2026</span>
-          <div>
-            <h3>Server-Side Sparse Assignment for Federated Mixture-of-Experts</h3>
-            <p><strong>Xue Zheng</strong> and Aylin Yener · Accepted to IEEE Information Theory Workshop (ITW)</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2026</span>
-          <div>
-            <h3>Toward WAN-Aware LLM Training Across Heterogeneous, Geo-Distributed Sites</h3>
-            <p>Z. Luo et al., including <strong>Xue Zheng</strong> · ACM SIGCOMM Workshop on Networks for AI Computing</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2026</span>
-          <div>
-            <h3><a href="https://doi.org/10.3390/e28010101" target="_blank" rel="noreferrer">Federated Learning Under Evolving Distribution Shifts</a></h3>
-            <p>X. Tan, T. Xie, <strong>Xue Zheng</strong>, et al. · <em>Entropy</em>, 28(1), 101</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2026</span>
-          <div>
-            <h3>Decentralized Multi-Agent Performative Prediction under Coupled Graph and Deployment-Induced Data Evolution</h3>
-            <p><strong>Xue Zheng</strong> and Aylin Yener · Under review</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2026</span>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2410.18075" target="_blank" rel="noreferrer">ProFL: Performative Robust Optimal Federated Learning</a></h3>
-            <p><strong>Xue Zheng</strong>, T. Xie, X. Tan, A. Yener, and X. Zhang · Under review</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2023</span>
-          <div>
-            <h3>Privacy-Preserving Clustered Peer-to-Peer Learning</h3>
-            <p><strong>Xue Zheng</strong> and Aylin Yener · Asilomar Conference on Signals, Systems, and Computers</p>
-          </div>
-        </li>
-        <li>
-          <span class="pub-year">2022</span>
-          <div>
-            <h3>DiPLe: Learning Directed Collaboration Graphs for Peer-to-Peer Personalized Learning</h3>
-            <p><strong>Xue Zheng</strong>, Parinaz Naghizadeh, and Aylin Yener · IEEE Information Theory Workshop</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+      <article>
+        <p class="kicker">News</p>
+        <ul class="news-list">
+          <li><time datetime="2026">2026</time><span>S3-MoE accepted to IEEE ITW 2026.</span></li>
+          <li><time datetime="2026-06">Jun. 2026</time><span>Presented ProFL at the AIMACCS Workshop.</span></li>
+          <li><time datetime="2026">2026</time><span>Federated Learning Under Evolving Distribution Shifts published in <em>Entropy</em>.</span></li>
+        </ul>
+      </article>
 
-    <section id="experience" class="section-block" aria-labelledby="experience-title">
-      <div class="section-heading">
-        <p class="section-label">Background</p>
-        <h2 id="experience-title">Education &amp; experience</h2>
-      </div>
-      <div class="timeline">
-        <article>
-          <div class="timeline-date">2022 — Present</div>
-          <div>
-            <h3>Ph.D. in Electrical and Computer Engineering</h3>
-            <p>The Ohio State University · Graduate Research Assistant</p>
-            <p class="muted">Advisor: Prof. Aylin Yener · Candidacy completed April 2025 · Expected December 2026</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2024 — 2026</div>
-          <div>
-            <h3>Lecturer &amp; Graduate Student Mentor</h3>
-            <p>AI-EDGE Summer REU Program</p>
-            <p class="muted">Probability, generative AI, and undergraduate research mentoring.</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2020 — 2021</div>
-          <div>
-            <h3>M.S. in Electrical and Computer Engineering</h3>
-            <p>The Ohio State University</p>
-            <p class="muted">Advisor: Prof. Parinaz Naghizadeh</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2014 — 2018</div>
-          <div>
-            <h3>B.Eng. in Information and Electrical Engineering</h3>
-            <p>Harbin Institute of Technology at Weihai</p>
-            <p class="muted">Merit Student of Harbin Institute of Technology</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact" aria-labelledby="contact-title">
-      <p class="section-label">Contact</p>
-      <h2 id="contact-title">Interested in collaborating?</h2>
-      <p>I welcome conversations about federated learning, privacy-preserving AI, and distributed foundation models.</p>
-      <a href="mailto:zheng.1822@osu.edu">zheng.1822@osu.edu <span aria-hidden="true">↗</span></a>
+      <article>
+        <p class="kicker">Presentations</p>
+        <ul class="plain-list">
+          <li><strong>AIMACCS Workshop</strong><br>ProFL poster · Columbus, 2026</li>
+          <li><strong>Asilomar Conference</strong><br>Privacy-preserving P2P learning · 2023</li>
+          <li><strong>IEEE ITW</strong><br>DiPLe oral presentation · 2022</li>
+        </ul>
+      </article>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Xue Zheng</p>
-    <p>Built with care in Columbus, Ohio.</p>
+    <div>
+      <strong>Xue Zheng</strong>
+      <span>Federated learning · Privacy · Distributed AI</span>
+    </div>
+    <a href="mailto:zheng.1822@osu.edu">zheng.1822@osu.edu</a>
+    <span>© 2026</span>
   </footer>
+  <script>
+    document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector(".carousel-track");
+      const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
+      const previous = carousel.querySelector(".carousel-prev");
+      const next = carousel.querySelector(".carousel-next");
+      const dots = carousel.querySelector(".carousel-dots");
+      let current = 0;
+      let pointerStart = null;
+
+      const goTo = (index) => {
+        current = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        slides.forEach((slide, slideIndex) => {
+          slide.setAttribute("aria-hidden", String(slideIndex !== current));
+        });
+        dots.querySelectorAll("button").forEach((dot, dotIndex) => {
+          dot.classList.toggle("is-active", dotIndex === current);
+          dot.setAttribute("aria-current", dotIndex === current ? "true" : "false");
+        });
+      };
+
+      slides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", `Show photograph ${index + 1}`);
+        dot.addEventListener("click", () => goTo(index));
+        dots.appendChild(dot);
+      });
+
+      if (slides.length < 2) {
+        carousel.classList.add("single-slide");
+      } else {
+        previous.addEventListener("click", () => goTo(current - 1));
+        next.addEventListener("click", () => goTo(current + 1));
+        carousel.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowLeft") goTo(current - 1);
+          if (event.key === "ArrowRight") goTo(current + 1);
+        });
+        carousel.addEventListener("pointerdown", (event) => {
+          pointerStart = event.clientX;
+        });
+        carousel.addEventListener("pointerup", (event) => {
+          if (pointerStart === null) return;
+          const distance = event.clientX - pointerStart;
+          if (Math.abs(distance) > 45) goTo(current + (distance < 0 ? 1 : -1));
+          pointerStart = null;
+        });
+        carousel.addEventListener("pointercancel", () => {
+          pointerStart = null;
+        });
+      }
+
+      goTo(0);
+    });
+  </script>
 </body>
 </html>
