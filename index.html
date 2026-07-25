@@ -1,417 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xue Zheng is a Ph.D. candidate at The Ohio State University working on federated and decentralized learning, privacy-preserving machine learning, and foundation models.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Xue Zheng | Federated &amp; Decentralized Learning</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Xue Zheng, home">XZ</a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="mailto:zheng.1822@osu.edu">Email</a>
+    </nav>
+  </header>
 
-<html lang="en-us"><head>
-	<meta name="generator" content="Hugo 0.87.0" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Cormorant+Garamond&family=Libre+Baskerville&family=Source+Serif+Pro&family=Crimson+Text&family=Inter&family=Crimson+Pro&family=Literata&family=Ubuntu+Mono&family=Inter&family=Roboto">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-
-    
-    
-
-    <title>XUE_ZHENG</title>
-
-
-    
-
-</head><body class="container d-flex flex-column min-vh-100">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row w-100">
-    <div class="col w-100">
-        
-
-<div class="about row w-100">
-    
-
-
-
-<div class="row w-100 justify-content-center">
-    <img class="rounded-circle  " src="images/profile.png" alt="profile_picture" id="profile_picture" />
-</div>
-
-
-
-<div class=" row w-100 justify-content-center main_color" id="full_name">
-    Xue Zheng
-</div>
-
-
-
-<div class="affiliations row w-100 justify-content-center">
-    <div class="row w-100 justify-content-center">
-        
-        <div class="row w-100 justify-content-center" id="title-name">
-            <span class="main_color" id="title">
-                MS student,
-            </span>
-            <span id="name" class="text-muted">
-                the Ohio State University
-            </span>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Ph.D. Candidate · The Ohio State University</p>
+        <h1>Xue Zheng</h1>
+        <p class="lede">
+          I develop learning methods that help distributed agents collaborate
+          when data are private, heterogeneous, and constantly changing.
+        </p>
+        <div class="actions" aria-label="Contact and profile links">
+          <a class="button primary" href="mailto:zheng.1822@osu.edu">Get in touch</a>
+          <a class="button" href="/cv.pdf" target="_blank" rel="noreferrer">CV</a>
+          <a class="button" href="https://www.linkedin.com/in/xue-zheng-a138611b3/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button" href="https://github.com/xuezhengworks" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-        <div class="row w-100 justify-content-center text-muted" id="email">
-            zheng.1822@osu.edu
-        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="/images/profile.png" alt="Portrait of Xue Zheng" width="548" height="457">
+        <p class="portrait-note">Columbus, Ohio</p>
+      </div>
+    </section>
 
+    <section class="intro" aria-labelledby="about-title">
+      <p class="section-label">About</p>
+      <div>
+        <h2 id="about-title">Building trustworthy collaboration into machine learning.</h2>
+        <p>
+          I am a post-candidacy Ph.D. candidate in Electrical and Computer
+          Engineering at The Ohio State University, advised by
+          <a href="https://u.osu.edu/yener.1/" target="_blank" rel="noreferrer">Prof. Aylin Yener</a>
+          in the INSPIRE@OhioState Lab. My work spans algorithm design,
+          theoretical analysis, and systems evaluation for federated and
+          decentralized learning.
+        </p>
+        <p>
+          I am especially interested in settings where institutions or edge
+          devices cannot share local data or model information directly, yet
+          still need to train and deploy advanced AI systems together.
+        </p>
+      </div>
+    </section>
 
-        
-    </div>
-</div>
+    <section id="research" class="section-block" aria-labelledby="research-title">
+      <div class="section-heading">
+        <p class="section-label">Research</p>
+        <h2 id="research-title">Questions I work on</h2>
+      </div>
+      <div class="research-grid">
+        <article>
+          <span class="number">01</span>
+          <h3>Federated &amp; decentralized learning</h3>
+          <p>Learning across heterogeneous clients without centralizing their data.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <h3>Privacy-preserving collaboration</h3>
+          <p>Secure aggregation and peer-to-peer methods that protect local models and information.</p>
+        </article>
+        <article>
+          <span class="number">03</span>
+          <h3>Distribution shifts</h3>
+          <p>Robust and performative learning when deployed models influence future data.</p>
+        </article>
+        <article>
+          <span class="number">04</span>
+          <h3>Foundation models &amp; MoE</h3>
+          <p>Resource-aware federated fine-tuning and sparse expert assignment for large models.</p>
+        </article>
+      </div>
+    </section>
 
-
-
-<div class="socials row w-100  justify-content-center">
-    <div class="row w-100 justify-content-center">
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-
-        
-
-        
-
-        
-
-        
-        <a class="main_color" rel="me" href='https://linkedin.com/in//xue-zheng-a138611b3/' target="_blank">
-            <i data-feather="linkedin"></i>
-        </a>
-        
-
-        
-
-        
-        <a class="main_color" href='cv.pdf' target="_blank">
-            <i class="ai ai-2x ai-cv academic_icons_customize"></i>
-        </a>
-        
-
-        
-
-
-    </div>
-</div>
-
-
-
-<div class="introduction row w-100 text-justify">
-    <div class="col w-100">
-        <p>I am a first year PhD student and Research Assistant at INSPIRE@OhioState under the supervision of Prof. Aylin Yener.</p> 
-	<p>I got my M.S. in Electrical and Computer Engineering at the Ohio State University, and my M.S. research advisor was <a href="https://parinazn.com">Parinaz Naghizadeh</a>. I obtained my B.Eng. in Information and Electrical Engineering at Harbin Institute of Technology at Weihai.</p>
-        <p>My research interests are Federated learning, distributed machine learning, and optimization.</p>
-
-    </div>
-</div>
-
-</div>
-
-<div class="about row w-100">
-    
-
-
-
-
-
-<div class="interests col ">
-    <h4 class="main_color">Interests</h4>
-    <ul>
-        
+    <section id="publications" class="section-block" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <p class="section-label">Publications</p>
+        <h2 id="publications-title">Selected work</h2>
+      </div>
+      <ol class="publication-list">
         <li>
-            Federated learning
+          <span class="pub-year">2026</span>
+          <div>
+            <h3>Server-Side Sparse Assignment for Federated Mixture-of-Experts</h3>
+            <p><strong>Xue Zheng</strong> and Aylin Yener · Accepted to IEEE Information Theory Workshop (ITW)</p>
+          </div>
         </li>
-        
         <li>
-            Distributed machine learning
+          <span class="pub-year">2026</span>
+          <div>
+            <h3>Toward WAN-Aware LLM Training Across Heterogeneous, Geo-Distributed Sites</h3>
+            <p>Z. Luo et al., including <strong>Xue Zheng</strong> · ACM SIGCOMM Workshop on Networks for AI Computing</p>
+          </div>
         </li>
-        
         <li>
-            Optimization
+          <span class="pub-year">2026</span>
+          <div>
+            <h3><a href="https://doi.org/10.3390/e28010101" target="_blank" rel="noreferrer">Federated Learning Under Evolving Distribution Shifts</a></h3>
+            <p>X. Tan, T. Xie, <strong>Xue Zheng</strong>, et al. · <em>Entropy</em>, 28(1), 101</p>
+          </div>
         </li>
-        
-    </ul>
-</div>
-
-
-
-<div class="academia col">
-    <h4 class="main_color">Academia</h4>
-    
-    <div class="row">
-        <div class="course col">
-            <div class="institution_dates row">
-                <div class="institution col" id="institution_title">
-                    the Ohio State University
-                </div>
-                <div class="main_color dates col-md-auto  justify-content-end">
-                    01/2020
-                    
-                    -  Est. 12/2021
-                    
-                </div>
-            </div>
-            <div class="degree_major row">
-                <div class="text-muted col">
-                    M.Sc. Electrical and Computer Engineering
-
-                    
-                </div>
-            </div>
-
-            
-            <div class="other_info row text-muted">
-                <div class="col">
-                    supervised by Parinaz Naghizadeh
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="course col">
-            <div class="institution_dates row">
-                <div class="institution col" id="institution_title">
-                    Harbin Institute of Technology at Weihai
-                </div>
-                <div class="main_color dates col-md-auto  justify-content-end">
-                    09/2014
-                    
-                    - 06/2018
-                    
-                </div>
-            </div>
-            <div class="degree_major row">
-                <div class="text-muted col">
-                    B.Eng. Information and Electrical Engineering
-
-                    
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-    
-</div>
-
-
-</div>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row w-100">
-    <div class="col w-100">
-        
-        <div class="row w-100">
-            <div class="col w-100">
-                
-                <h3 class="row  w-100 section-title main_color"> Publications </h3>
-                
-
-                
-                <h6 class="row w-100 section-subtitle  text-muted"> Working Papers: </h6>
-                
-            </div>
-        </div>
-        
-
-
-
-
-
-<div class="publications row w-100">
-    <div class="col w-100">
-        
-        <div class="publication row  w-100">
-
-            <div class="section-1 w-100">
-                <span>
-                    Decentralized Multi-Agent Learning with Heterogeneous Agents,
-                </span>
-
-                <span class="text-muted publication-date">
-                    2021,
-                </span>
-
-                <span class="text-muted publication-name">
-                    Working paper
-                </span>
-
-            </div>
-
-            <div class="section-2 text-muted w-100">
-
-                
-
-                
-                
-                <span>
-                    Xue Zheng
-                </span>
-                
-                <span class="separator">
-                    ,
-                </span>
-                
-                
-                <span>
-                    Parinaz Naghizadeh
-                </span>
-                
-                
-                
-
-            </div>
-
-            
-            
-
-
-
-        </div>
-
-        
-
-    </div>
-    
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="row w-100">
-    <div class="col w-100">
-        
-        <div class="row w-100">
-            <div class="col w-100">
-                
-                <h3 class="row  w-100 section-title main_color"> Teaching Experience </h3>
-                
-
-                
-            </div>
-        </div>
-        
-
-
-
-
-
-<div class="projects row w-100">
-    <div class="col w-100">
-        
-        <div class="project row w-100">
-            <div class="section-1 w-100">
-                <span class="project-title">
-                    Teaching Aid of ECE 5362 Computer Architecture and Design,
-                </span>
-				<span class="text-muted project-date">
-                    2021,
-                </span>
-
-                <span class="text-muted project-name">
-                    the Ohio State University
-                </span>
-            </div>
-
-            
-            
-
-
-        </div>
-        
-
-
-    </div>
-    
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-<footer class="mt-auto d-flex justify-content-center text-muted small secondary_font">
-    <span class="text-muted">Copyright (c) 2021, XUE_ZHENG,
-        <a class="text-muted" href="https://github.com/hadisinaee/avicenna" target="_blank"> created by Avicenna
-            (MIT)</a>
-    </span>
-</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
-<script>
-    feather.replace()
-</script></body>
-
+        <li>
+          <span class="pub-year">2026</span>
+          <div>
+            <h3>Decentralized Multi-Agent Performative Prediction under Coupled Graph and Deployment-Induced Data Evolution</h3>
+            <p><strong>Xue Zheng</strong> and Aylin Yener · Under review</p>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2026</span>
+          <div>
+            <h3><a href="https://arxiv.org/abs/2410.18075" target="_blank" rel="noreferrer">ProFL: Performative Robust Optimal Federated Learning</a></h3>
+            <p><strong>Xue Zheng</strong>, T. Xie, X. Tan, A. Yener, and X. Zhang · Under review</p>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2023</span>
+          <div>
+            <h3>Privacy-Preserving Clustered Peer-to-Peer Learning</h3>
+            <p><strong>Xue Zheng</strong> and Aylin Yener · Asilomar Conference on Signals, Systems, and Computers</p>
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2022</span>
+          <div>
+            <h3>DiPLe: Learning Directed Collaboration Graphs for Peer-to-Peer Personalized Learning</h3>
+            <p><strong>Xue Zheng</strong>, Parinaz Naghizadeh, and Aylin Yener · IEEE Information Theory Workshop</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="experience" class="section-block" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <p class="section-label">Background</p>
+        <h2 id="experience-title">Education &amp; experience</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <div class="timeline-date">2022 — Present</div>
+          <div>
+            <h3>Ph.D. in Electrical and Computer Engineering</h3>
+            <p>The Ohio State University · Graduate Research Assistant</p>
+            <p class="muted">Advisor: Prof. Aylin Yener · Candidacy completed April 2025 · Expected December 2026</p>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-date">2024 — 2026</div>
+          <div>
+            <h3>Lecturer &amp; Graduate Student Mentor</h3>
+            <p>AI-EDGE Summer REU Program</p>
+            <p class="muted">Probability, generative AI, and undergraduate research mentoring.</p>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-date">2020 — 2021</div>
+          <div>
+            <h3>M.S. in Electrical and Computer Engineering</h3>
+            <p>The Ohio State University</p>
+            <p class="muted">Advisor: Prof. Parinaz Naghizadeh</p>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-date">2014 — 2018</div>
+          <div>
+            <h3>B.Eng. in Information and Electrical Engineering</h3>
+            <p>Harbin Institute of Technology at Weihai</p>
+            <p class="muted">Merit Student of Harbin Institute of Technology</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <p class="section-label">Contact</p>
+      <h2 id="contact-title">Interested in collaborating?</h2>
+      <p>I welcome conversations about federated learning, privacy-preserving AI, and distributed foundation models.</p>
+      <a href="mailto:zheng.1822@osu.edu">zheng.1822@osu.edu <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Xue Zheng</p>
+    <p>Built with care in Columbus, Ohio.</p>
+  </footer>
+</body>
 </html>
