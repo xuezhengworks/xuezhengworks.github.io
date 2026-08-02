@@ -117,7 +117,7 @@ footer {
 .lead-grid {
   padding: 34px 0 42px;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(190px, 0.7fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-bottom: 3px double var(--rule);
 }
 
@@ -128,13 +128,14 @@ footer {
 }
 
 .about-column {
-  padding-right: 34px;
+  padding-right: 48px;
+  border-right: 1px solid var(--hairline);
 }
 
 .portrait-column {
-  padding: 0 34px;
-  border-right: 1px solid var(--hairline);
-  border-left: 1px solid var(--hairline);
+  width: min(100%, 430px);
+  margin-top: 34px;
+  padding: 0;
 }
 
 .photo-carousel {
@@ -262,7 +263,7 @@ footer {
 }
 
 .interests-column {
-  padding-left: 34px;
+  padding-left: 48px;
 }
 
 .kicker {
@@ -325,9 +326,7 @@ p {
 
 .interest-list li {
   padding: 15px 0;
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 13px;
+  display: block;
   border-top: 1px solid var(--hairline);
 }
 
@@ -345,9 +344,12 @@ p {
 
 .interest-list h2 {
   margin-bottom: 4px;
-  font-size: 19px;
+  font-size: clamp(20px, 2vw, 26px);
   font-weight: 400;
-  line-height: 1.18;
+  line-height: 1.2;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .interest-list p {
@@ -583,34 +585,12 @@ footer strong {
 }
 
 @media (max-width: 900px) {
-  .lead-grid {
-    grid-template-columns: 1fr 0.72fr;
-  }
-
   .about-column {
-    padding-right: 28px;
-  }
-
-  .portrait-column {
-    padding: 0 0 0 28px;
-    border-right: 0;
+    padding-right: 32px;
   }
 
   .interests-column {
-    margin-top: 34px;
-    padding: 30px 0 0;
-    grid-column: 1 / -1;
-    border-top: 1px solid var(--rule);
-  }
-
-  .interest-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 32px;
-  }
-
-  .interest-list li:nth-last-child(2) {
-    border-bottom: 1px solid var(--hairline);
+    padding-left: 32px;
   }
 
   .feature-story {
@@ -704,32 +684,24 @@ footer strong {
 
   .about-column {
     padding: 0;
-  }
-
-  .about-column h1 {
-    font-size: clamp(39px, 12vw, 54px);
+    border-right: 0;
   }
 
   .portrait-column {
-    width: min(76%, 320px);
+    width: min(100%, 420px);
     margin: 30px 0 0;
     padding: 0;
-    order: 2;
     border: 0;
   }
 
   .interests-column {
     margin-top: 34px;
-    padding-top: 28px;
-    order: 3;
+    padding: 28px 0 0;
+    border-top: 1px solid var(--rule);
   }
 
   .interest-list {
     display: block;
-  }
-
-  .interest-list li:nth-last-child(2) {
-    border-bottom: 0;
   }
 
   .work-section {
