@@ -372,6 +372,10 @@ p {
   border-bottom: 4px solid var(--rule);
 }
 
+.section-banner > * {
+  min-width: 0;
+}
+
 .section-banner .kicker {
   margin-bottom: 8px;
 }
@@ -714,7 +718,7 @@ footer strong {
   }
 
   .section-banner h2 {
-    font-size: clamp(42px, 15vw, 63px);
+    font-size: clamp(38px, 11vw, 52px);
   }
 
   .section-banner > p:last-child {
